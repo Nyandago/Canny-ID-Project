@@ -21,6 +21,15 @@ class CannyCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+              Center(
+              child: CircleAvatar(
+               backgroundImage: AssetImage('images/Canny.jpg'),
+                radius: 100.0,
+             ),
+            ),
+            Divider(height: 60.0,
+            color: Colors.grey[800],
+            ),
             Text(
               'NAME',
               style: TextStyle(
