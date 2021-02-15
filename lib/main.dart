@@ -5,7 +5,13 @@ void main() =>
     home: CannyCard(),
   ));
 
-class CannyCard extends StatelessWidget {
+class CannyCard extends StatefulWidget {
+  @override
+  _CannyCardState createState() => _CannyCardState();
+}
+
+class _CannyCardState extends State<CannyCard> {
+  int favNumber = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,6 +21,15 @@ class CannyCard extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            favNumber++;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.grey[800],
       ),
       body: Container(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
@@ -57,7 +72,7 @@ class CannyCard extends StatelessWidget {
             ),
             SizedBox(height: 10.0,), //Adds space btn Up&bottom Texts
             Text(
-              '10',
+              '$favNumber',
               style: TextStyle(
               color: Colors.amberAccent,
               letterSpacing: 2.0,
@@ -87,6 +102,7 @@ class CannyCard extends StatelessWidget {
     );
   }
 }
+
 
 
 
