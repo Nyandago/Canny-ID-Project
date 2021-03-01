@@ -17,7 +17,7 @@ class _CannyCardState extends State<CannyCard> {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: Text('Canny ID Card'),
+        title: Text('Canny Junior\'s Card'),
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
@@ -28,8 +28,8 @@ class _CannyCardState extends State<CannyCard> {
             favNumber++;
           });
         },
-        child: Icon(Icons.add),
-        backgroundColor: Colors.grey[800],
+        child: Icon(Icons.call),
+        backgroundColor: Colors.grey[850],
       ),
       body: Container(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
@@ -54,9 +54,9 @@ class _CannyCardState extends State<CannyCard> {
             ),
             SizedBox(height: 10.0,), //Adds space btn Up&bottom Texts
             Text(
-              'Paul James',
+              'Paul Nyandago',
               style: TextStyle(
-              color: Colors.amberAccent,
+              color: Colors.blue,
               letterSpacing: 2.0,
               fontSize: 22.0,
               fontWeight: FontWeight.bold,
@@ -64,7 +64,7 @@ class _CannyCardState extends State<CannyCard> {
             ),
             SizedBox(height: 30.0,),
             Text(
-            'FAVORITE NUMBER',
+            'FAVORITE QUOTE',
               style: TextStyle(
               color: Colors.grey,
               letterSpacing: 2.0,
@@ -72,9 +72,9 @@ class _CannyCardState extends State<CannyCard> {
             ),
             SizedBox(height: 10.0,), //Adds space btn Up&bottom Texts
             Text(
-              '$favNumber',
+              'Nothing is easy unless you get easy on them! Learn the rules and play the game with perfection',
               style: TextStyle(
-              color: Colors.amberAccent,
+              color: Colors.red,
               letterSpacing: 2.0,
               fontSize: 22.0,
               fontWeight: FontWeight.bold,
